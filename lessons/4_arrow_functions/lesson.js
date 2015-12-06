@@ -26,19 +26,17 @@ const menu = createMenu('Sunbeam Coffee');
 
 
 // all the curries
-const makeCurry = function() {
-  return function(first) {
-    return function(second) {
-      return function(last) {
-        console.log(`1. cook the ${first} on low temp`);
-        console.log(`2. stir in the ${second} and mix well.`);
-        console.log(`3. add just a pich of ${last} and let simmer`);
-      }
+const makeCurry = function(first) {
+  return function(second) {
+    return function(last) {
+      console.log(`1. cook the ${first} on low temp`);
+      console.log(`2. stir in the ${second} and mix well.`);
+      console.log(`3. add just a pich of ${last} and let simmer`);
     }
   }
 }
 
-makeCurry('beef')('sauce')('garlic')();
+makeCurry('beef')('sauce')('garlic');
 
 
 
