@@ -30,3 +30,21 @@ data = false;
 
 // but data is false now? prevent that!
 logger('debbuger', 'data value: ' + data.value);
+
+
+
+
+// Nightmare mode:
+// Like any template lib, we are using an object to replace
+// placeholders in a string with real values on the object
+// use ES2015 string literals and tags to make this happen instead
+var message = 'Hey there ${name}, do you like ${food} ?';
+var data = {name: 'Rauria', food: 'butter cake'};
+
+for (key in data) {
+  var interopKey = '${'+key+'}';
+  if (message.includes(interopKey)) {
+    message = message.replace(interopKey, data[key]);
+  }
+}
+console.log(message);

@@ -32,3 +32,23 @@ const utils = {
     console.log('...updating');
   }
 };
+
+
+
+
+
+const constantBookGenres = {
+  mystery: 'drama_and_mistery',
+  sci_fi: 'science_fiction',
+  vampire: 'teenage_drama'
+};
+
+// can we register all props on the object literal
+// witho having to resort to uson dot notation for
+// dynamic lookup?
+const book = {
+  title: 'Lil `ole pancake'
+};
+book[constantBookGenres['vampire']] = true;
+
+
