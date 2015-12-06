@@ -1,2 +1,2 @@
 require('babel-core/register');
-require('./classes');
+require('./lesson.js');
