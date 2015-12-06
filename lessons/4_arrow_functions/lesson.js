@@ -3,7 +3,7 @@
 'abcd'.split('').forEach(function(letter, i){
   console.log(`${letter}: ${i}`);
 });
-
+/*******************************************/
 
 
 const createMenu = function(name) {
@@ -20,8 +20,8 @@ const createMenu = function(name) {
 }
 
 const menu = createMenu('Sunbeam Coffee');
-// menu.showMenu()
-
+menu.showMenu()
+/*******************************************/
 
 
 

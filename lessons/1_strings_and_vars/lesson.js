@@ -9,7 +9,7 @@ if (true) {
 console.log('outer: ' + message);
 // should not change!
 console.log('message has changed? ', message !== 'I am the outer message');
-
+/*******************************************/
 
 
 // Please clean this up!
@@ -21,7 +21,7 @@ var logger = function(tag, message) {
 
 var data = {id: 123, value: 'hey'};
 logger('debbuger', 'the data: ' + JSON.stringify(data));
-
+/*******************************************/
 
 
 
@@ -30,7 +30,7 @@ data = false;
 
 // but data is false now? prevent that!
 logger('debbuger', 'data value: ' + data.value);
-
+/*******************************************/
 
 
 

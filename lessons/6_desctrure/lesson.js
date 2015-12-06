@@ -14,7 +14,7 @@ const showPostsFromUser = (user) => {
 };
 showPostsFromUser(user);
 
-
+/*******************************************/
 
 
 const config = {
@@ -29,12 +29,12 @@ const logLevel = config.logLevel;
                   // keep the const name, but use destructuring
 const secretKey = config.secrets.key;
 
-
+/*******************************************/
 
 const foods = ['food', 'apple']
 const thirdFood = foods[2] || 'candy';
 
-
+/*******************************************/
 
 const greet = (user) => {
   const username = user.name || '';

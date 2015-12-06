@@ -19,6 +19,9 @@ const collection = function(){
     getOne: getOne
   };
 };
+/*******************************************/
+
+
 
 const utils = {
   version: '1.2.3',
@@ -32,7 +35,7 @@ const utils = {
     console.log('...updating');
   }
 };
-
+/*******************************************/
 
 
 
