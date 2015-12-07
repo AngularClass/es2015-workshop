@@ -6,21 +6,19 @@
 /*******************************************/
 
 
-const createMenu = function(name) {
-  this.menueName = name;
-  this.items = ['fruit', 'crackers', 'new orleans coffee']
-  return {
-    showMenu: function() {
-      console.log(`${this.menueName}:`);
-      this.items.forEach(function(item, i) {
-        console.log(`${i}. ${item}`);
-      });
-    }
+class MusicBeat {
+  constructor(bpm, beat) {
+    this.bpm = bpm;
+
+    this.playBeat = function() {
+      setInterval(function() {
+        console.log(beat);
+      }, (60 / this.bpm) * 1000);
+    };
   }
 }
 
-const menu = createMenu('Sunbeam Coffee');
-menu.showMenu()
+const backgroundTrack = new MusicBeat(80, 'boom boom clack');
 /*******************************************/
 
 

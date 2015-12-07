@@ -42,5 +42,26 @@ console.log(name + ' is instance of Character ', scout instanceof Character);
 
 scout.searchForEnemies();
 scout.attack();
+/*******************************************/
 
 
+function FancyArray() {
+  Array.call(this, arguments);
+  this.count = arguments.length;
+  // static method
+  this.toString = function() {
+    return '[FancyArray array]';
+  };
+}
+
+FancyArray.prototype = Object.create(Array.prototype);
+
+FancyArray.prototype.last = function() {
+  return this[this.length - 1];
+};
+
+var array = new FancyArray();
+array.push(1, 2, 3, 4, 5, 6, 7);
+
+console.log(array.last());
+console.log(array.toString());
