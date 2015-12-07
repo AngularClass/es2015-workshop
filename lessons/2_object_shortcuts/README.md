@@ -1,4 +1,4 @@
-# Object shorcuts
+# object shorcuts
 
 ## same key names
 ```javascript

@@ -68,3 +68,19 @@ var template = `<div>
 ```
 
 spacing is preserved because they are replaced with `\n`
+
+
+### tagging
+we can tag a string with a function which gives us control on what the output of the string will be.
+```javascript
+var name = 'Joy';
+var tag = function(strings) {
+    var values = [].slice.call(arguments, 1);
+    console.log(strings[0]); // 'waddup'
+    console.log(strings[1]); // ', have a nice day!'
+    console.log(values[0]); // 'Joy'
+    return 'Yooooo!';
+}
+
+tag`waddup ${name}, have a nice day!`; // 'Yooooo!'
+```
